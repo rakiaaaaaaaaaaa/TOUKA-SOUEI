@@ -13,12 +13,9 @@
 </head>
 <body>
 
-<div class="cursor-glow" id="cursorGlow"></div>
+<a class="skip-link" href="#home">Skip to content</a>
 
 <!-- Loader -->
-<div class="loader" id="loader">
-  <div class="loader-logo">TOUKA SOUEI</div>
-</div>
 
 <!-- Nav -->
 <header class="navbar" id="navbar">
@@ -34,12 +31,13 @@
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
     <a href="#contact" class="btn btn-small nav-cta">Let's Talk</a>
-    <button class="burger" id="burger" aria-label="Open menu">
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
+<main>
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="blob blob-1"></div>
@@ -48,16 +46,10 @@
 
   <div class="hero-inner container">
     <div class="hero-text" data-reveal>
-      <p class="hero-kicker"><span class="dot"></span> Available for new collaborations</p>
-      <h1 class="hero-title">Hi, I'm <span class="gradient-text">Touka Souei</span></h1>
-      <h2 class="hero-subtitle">
-        <span class="typed" id="typed"></span><span class="cursor-blink">|</span>
-      </h2>
-      <p class="hero-desc">
-        Creative-minded Digital Marketing specialist who turns ideas into high-performing content
-        and scales online communities through strategic storytelling and trend-driven execution.
-        Based in Gabes, Tunisia 🇹🇳.
-      </p>
+      <p class="hero-kicker"><span class="dot"></span> Available for collaborations</p>
+      <p class="hero-intro">TOUKA SOUEI / DIGITAL CREATIVE</p>
+      <h1 class="hero-title">Content that<br>connects.<br><span class="gradient-text">Growth that<br>lasts.</span></h1>
+      <p class="hero-desc">I turn ideas into scroll-stopping stories and audiences into communities. Content creator &amp; digital strategist, based in Tunisia.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">
           <i class="fa-solid fa-paper-plane"></i> Get In Touch
@@ -75,18 +67,16 @@
 
     <div class="hero-visual" data-reveal>
       <div class="photo-ring">
-        <img src="assets/images/touka-profile.jpg" alt="Touka Souei" class="hero-photo">
-        <div class="badge badge-1"><i class="fa-brands fa-tiktok"></i> 49K+</div>
-        <div class="badge badge-2"><i class="fa-brands fa-instagram"></i> 17K+</div>
-        <div class="badge badge-3"><i class="fa-solid fa-bolt"></i> Top Creator</div>
+        <img src="assets/images/touka-profile.jpg" alt="Touka Souei, digital content creator" class="hero-photo" width="1091" height="772" fetchpriority="high">
+        <div class="portrait-caption"><span>THE PERSON BEHIND THE CONTENT</span><span>01 / TS</span></div>
+        <div class="badge badge-1"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i><div><strong>49K</strong><span>TikTok community</span></div><span class="badge-note">From 3K</span></div>
       </div>
     </div>
   </div>
 
-  <a href="#about" class="scroll-down" aria-label="Scroll down">
-    <i class="fa-solid fa-chevron-down"></i>
-  </a>
+  <div class="hero-bottom container"><span>STORYTELLING. STRATEGY. A LITTLE CREATIVE MAGIC.</span><a href="#about" class="scroll-down">Explore my world <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
 </section>
+<div class="expertise-strip" aria-label="Specialties"><span>CONTENT CREATION</span><span aria-hidden="true">✳</span><span>COMMUNITY BUILDING</span><span aria-hidden="true">✳</span><span>DIGITAL STRATEGY</span><span aria-hidden="true">✳</span><span>SOCIAL MEDIA GROWTH</span></div>
 
 <!-- ABOUT -->
 <section class="about" id="about">
@@ -369,11 +359,11 @@
 
       <form class="contact-form" data-reveal action="https://formsubmit.co/toukasouei@gmail.com" method="POST">
         <div class="form-row">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="name" placeholder="Your Name" aria-label="Your name" autocomplete="name" required>
+          <input type="email" name="email" placeholder="Your Email" aria-label="Your email" autocomplete="email" required>
         </div>
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <input type="text" name="subject" placeholder="Subject" aria-label="Subject">
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." aria-label="Tell me about your project" required></textarea>
         <button type="submit" class="btn btn-primary">
           <i class="fa-solid fa-paper-plane"></i> Send Message
         </button>
@@ -382,6 +372,7 @@
   </div>
 </section>
 
+</main>
 <footer class="footer">
   <div class="container footer-inner">
     <a href="#home" class="logo">Touka<span>.</span></a>
